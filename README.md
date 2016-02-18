@@ -1,15 +1,15 @@
 # 先执行提供的数据库脚本,无误后进行以下步骤
-1,将 tantan 放到gopath/src下
+1,将项目 放到gopath/src下
 
-2,cd tantan
+2,cd 项目目录
 
 3,数据库配置在conf 下 请更改 相应user和db即可
 
-4，在tantan 目录下:
+4,在项目根目录下:
   
 	bee run -gendoc=true
 5,打开浏览器
->访问http://ip:8080/api         *api都可以在上面查看测试*
+# >访问http://ip:8080/api           *api都可以在上面查看测试*
 
 -------
 # 附个人资料:
