@@ -9,7 +9,7 @@
   
 	bee run -gendoc=true
 5,打开浏览器
-# >访问http://ip:8080/api           *api都可以在上面查看测试*
+# 访问http://ip:8080/api           *api都可以在上面查看测试*
 
 -------
 # 附个人资料:
