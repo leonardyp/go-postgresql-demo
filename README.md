@@ -3,7 +3,7 @@
 	   beego :1.6.0
 	   Go    :go version go1.5rc1 darwin/amd64
 # 先执行提供的数据库脚本,无误后进行以下步骤 
->### psql -U [leonard]用户名 -d [demo]数据库  < db.sql
+>### psql -U [leonard]用户名 -d [demo]数据库  < db.sql  
 ![](https://github.com/leonardyp/go-postgresql-demo/blob/master/static/img/db.png)  
 
 1,将项目 放到gopath/src下
