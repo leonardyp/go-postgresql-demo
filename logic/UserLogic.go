@@ -3,7 +3,6 @@ package logic
 import (
 	"errors"
 	"go-postgresql-demo/dao"
-	"go-postgresql-demo/logger"
 	"go-postgresql-demo/models"
 	"strings"
 )
@@ -14,15 +13,6 @@ func CreateUserLogic(user *models.User) error {
 		return errors.New("empty user name is illegal")
 	} else {
 		user.Type = "user"
-		maxUserId, err := dao.GetMaxUserId()
-		if err != nil {
-			logger.Error("%v", err)
-			logger.ErrorStd("%v", err)
-			return err
-		}
-		logger.Debug("最大用户id:%v", maxUserId)
-		logger.DebugStd("最大用户id:%v", maxUserId)
-		user.Id = maxUserId + 1
 		return dao.CreateUserDao(user)
 	}
 }

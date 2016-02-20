@@ -8,13 +8,16 @@ import (
 
 // @Description 使用结构体创建用户
 func CreateUserDao(user *models.User) error {
-	_, err := models.DB().ExecOne(`
-	      INSERT INTO users VALUES (?id,?name,?type)
-	  `, *user)
+	_, err := models.DB().QueryOne(user, `
+        INSERT INTO users(name,type) VALUES (?name,?type)
+        RETURNING id
+    `, user)
+
 	if err != nil {
 		logger.Error("%v", err)
 		logger.ErrorStd("%v", err)
 	}
+
 	return err
 }
 
