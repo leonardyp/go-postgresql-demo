@@ -1,8 +1,8 @@
 package main
 
 import (
-	_ "tantan/docs"
-	_ "tantan/routers"
+	_ "go-postgresql-demo/docs"
+	_ "go-postgresql-demo/routers"
 
 	"github.com/astaxie/beego"
 )

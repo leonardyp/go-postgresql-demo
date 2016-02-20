@@ -2,10 +2,10 @@ package logic
 
 import (
 	"errors"
+	"go-postgresql-demo/dao"
+	"go-postgresql-demo/logger"
+	"go-postgresql-demo/models"
 	"strings"
-	"tantan/dao"
-	"tantan/logger"
-	"tantan/models"
 )
 
 // @Description 使用用户名创建用户

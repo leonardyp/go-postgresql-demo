@@ -1,9 +1,9 @@
 package dao
 
 import (
+	"go-postgresql-demo/logger"
+	"go-postgresql-demo/models"
 	"gopkg.in/pg.v3"
-	"tantan/logger"
-	"tantan/models"
 )
 
 // @Description 使用结构体创建用户

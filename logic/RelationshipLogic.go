@@ -2,10 +2,10 @@ package logic
 
 import (
 	"errors"
-	"tantan/dao"
-	"tantan/logger"
-	"tantan/models"
-	"tantan/utils"
+	"go-postgresql-demo/dao"
+	"go-postgresql-demo/logger"
+	"go-postgresql-demo/models"
+	"go-postgresql-demo/utils"
 )
 
 var ERR_ILLEGAL_STATE = errors.New("illegal state")

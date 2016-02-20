@@ -3,10 +3,10 @@ package controllers
 import (
 	"encoding/json"
 	"github.com/astaxie/beego"
+	"go-postgresql-demo/logger"
+	"go-postgresql-demo/logic"
+	"go-postgresql-demo/models"
 	"strconv"
-	"tantan/logger"
-	"tantan/logic"
-	"tantan/models"
 )
 
 // Operations about user

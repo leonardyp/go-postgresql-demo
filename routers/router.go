@@ -1,5 +1,5 @@
 // @APIVersion 1.0.0
-// @Title tantan test API
+// @Title beego+postgresql test API
 // @Description beego has a very cool tools to autogenerate documents for your API
 // @Contact 1679550318@qq.com
 // @TermsOfServiceUrl https://github.com/leonardyp
@@ -8,12 +8,13 @@
 package routers
 
 import (
-	"tantan/controllers"
+	"go-postgresql-demo/controllers"
 
 	"github.com/astaxie/beego"
 )
 
 func init() {
+
 	ns := beego.NewNamespace("/v1",
 		beego.NSNamespace("/users",
 			beego.NSInclude(
