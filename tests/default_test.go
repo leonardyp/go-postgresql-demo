@@ -1,17 +1,17 @@
 package test
 
 import (
+	_ "go-postgresql-demo/routers"
 	"net/http"
 	"net/http/httptest"
 	"path/filepath"
 	"runtime"
-	_ "tantan/routers"
 	"testing"
 
 	"github.com/astaxie/beego"
 	. "github.com/smartystreets/goconvey/convey"
-	"tantan/logger"
-	"tantan/models"
+	"go-postgresql-demo/logger"
+	"go-postgresql-demo/models"
 )
 
 func init() {
